@@ -28,12 +28,39 @@ let myObject={
 }
 
 const myFunction=function(){ 
-console.log("Hello World");
+// console.log("Hello World");
 }
 myFunction(); //This is how you call a function
 
 
-console.log(typeof myFunction);//Function
-console.log(typeof bigNumber);//bigInt
-console.log(typeof scoreValue);//Number
-console.log(typeof id);//Symbol
+// console.log(typeof myFunction);//Function
+// console.log(typeof bigNumber);//bigInt
+// console.log(typeof scoreValue);//Number
+// console.log(typeof id);//Symbol
+
+/********************Memory In JS********************/
+
+//Primitive (Stack Memory) ,Non-Primitive(Heap Memory)
+
+//STACK
+
+let myYoutubeName="JordInfotech";
+
+let anotherName=myYoutubeName;
+anotherName="KingsParadise"
+
+console.log(anotherName);
+console.log(myYoutubeName);
+
+//HEAP
+let userOne={
+    email:"user@google.com",
+    upiL:"user@ybl"
+}
+
+let userTwo=userOne;
+
+userTwo.email="jord@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
