@@ -16,8 +16,6 @@ const runs=100000;
 // console.log(runs.toLocaleString());//100,000 Default US standard
 // console.log(runs.toLocaleString('en-IN'));//1,00,000
 
-
-
 /**************************************MATHS*********************************** */
 
 // console.log(Math)
