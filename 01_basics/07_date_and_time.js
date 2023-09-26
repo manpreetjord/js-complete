@@ -17,6 +17,4 @@ let myTimeStamp=Math.floor(Date.now()/1000);
 console.log(myTimeStamp);
 
 let newDate=new Date();
-console.log(newDate);
-
 console.log(newDate.toLocaleString('en-IN',{dateStyle:"long"}))
