@@ -6,9 +6,12 @@
     <title>BMI Converter</title>
 </head>
 <body>
-    <h1>BMI Converter</h1>
-    <input type="text" name="Height" placeholder="Enter your height"/>
-    <input type="text" name="Weight" placeholder="Enter your Weight"/>
-    <button>Calculate</button>
+    <form>      
+        <input type="text" id="height" name="Height" placeholder="Enter your height"/>
+        <input type="text" id="weight" name="Weight" placeholder="Enter your Weight"/>
+        <button type="submit" onclick="calculate()">Calculate</button>
+    </form>
+    <div id="results"></div>
 </body>
+<script src="bmi.js"></script>
 </html>
