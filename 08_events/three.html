@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CODE with Manpreet Jord</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+
+
+//generate a random color
+const randomColor=()=>{
+    const hex="0123456789ABCDEF"
+    let color='#'
+    for (let i = 0; i < 6; i++) {
+           color+=hex[Math.floor(Math.Random()*16)]
+    }
+    return color;
+};
+
+
+const startChangingColor=function(){
+    document.body.style.backgroundColor=randomColor
+};
+const stopChangingColor=function(){};
+console.log(Math.floor(Math.Random()*16));
+        const sayDate=function(str){
+            console.log(str,Date.now());
+        }
+const stopMe=setInterval(sayDate,1000,"HeyBRO")
+const startMe=setInterval(sayDate,1000,"HeyBRO")
+    
+        
+        document.querySelector("stop").addEventListener('click',function(){
+            clearInterval(stopMe)
+            console.log("STOPPED");
+        })
+
+        document.querySelector("start").addEventListener('click',function(){
+            setInterval(startMe)
+            console.log("STARTED");
+        })
+    </script>
+</body>
+
+</html>
